@@ -1,8 +1,6 @@
 # Research_Paper_Intelligence_Platform
 Gen AI: A system that searches academic papers, retrieves evidence, answers questions with page-level citations, compares methodologies, and identifies limitations. Skills: RAG, embeddings, reranking, vector search, evaluation, FastAPI.
 
-# Research Paper Intelligence Platform
-
 A retrieval-augmented system that searches academic papers, answers questions with **page-level citations**, compares methodologies across papers, and surfaces limitations. It includes a **layout-aware parsing pipeline with per-page quality scoring**, and an evaluation harness so every component's contribution is quantified.
 
 > **Status:** in development. Results tables below are templates, to be filled from `make eval`.
