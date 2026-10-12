@@ -1,6 +1,8 @@
 # Research_Paper_Intelligence_Platform
 Gen AI: A system that searches academic papers, retrieves evidence, answers questions with page-level citations, compares methodologies, and identifies limitations. Skills: RAG, embeddings, reranking, vector search, evaluation, FastAPI.
 
+# Research Paper Intelligence Platform
+
 A retrieval-augmented system that searches academic papers, answers questions with **page-level citations**, compares methodologies across papers, and surfaces limitations. It includes a **layout-aware parsing pipeline with per-page quality scoring**, and an evaluation harness so every component's contribution is quantified.
 
 > **Status:** in development. Results tables below are templates, to be filled from `make eval`.
@@ -70,7 +72,7 @@ PDFs are the weakest link in most RAG systems: two-column layouts interleave tex
 
 ```mermaid
 flowchart LR
-    PDF[PDF page] --> CL[Page Classifier<br/>text | two-column | table-heavy |<br/>equation-heavy | scanned | figure-heavy]
+    PDF[PDF page] --> CL["Page Classifier<br/>text / two-column / table-heavy /<br/>equation-heavy / scanned / figure-heavy"]
     CL --> RT{Parser Router}
     RT -->|born-digital, simple| P1[PyMuPDF / pdfplumber<br/>words + coordinates]
     RT -->|complex layout| P2[Layout-aware parser<br/>Docling / Marker / MinerU]
